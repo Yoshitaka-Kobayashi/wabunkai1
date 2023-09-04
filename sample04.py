@@ -35,10 +35,10 @@ if __name__ == "__main__":
     time_start = time.time()
     for i in range(2, 1001):
         num1 = calc_decomposited_sum(i)
-        # if i <= 20:
-        #     print(f"{i:4}の和分解の組合せ数: {num1:50,}")
-        # if i % 100 == 0:
-        #     print(f"{i:4}の和分解の組合せ数: {num1:50,}")
+        if i <= 20:
+            print(f"n = {i}の和分解: {num1:,}")
+        if i % 100 == 0:
+            print(f"n = {i}の和分解: {num1:,}")
 
     time_end = time.time()
     print(time_end - time_start)
